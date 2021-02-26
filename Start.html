@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mühle – Onlinespiel</title>
+</head>
+<body>
+<form action="game.php" method="post">
+    <input type="radio" name="Spielerzahl" value="1" required> 1 Spieler <input type="radio" name="Spielerzahl" value="2"> 2 Spieler<br>
+    Spieler 1: <input type="text" name="namePlayer1" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
+    Spieler 2: <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
+    <input type="submit" value="Start"><br>
+</form>
+<audio controls>
+    <source src="Sound/MENU_SOUND.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
