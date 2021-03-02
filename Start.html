@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Mühle – Onlinespiel</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-<form action="game.php" method="post">
-    <input type="radio" name="Spielerzahl" value="1" required> 1 Spieler <input type="radio" name="Spielerzahl" value="2"> 2 Spieler<br>
-    Spieler 1: <input type="text" name="namePlayer1" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
-    Spieler 2: <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
-    <input type="submit" value="Start"><br>
-</form>
-<audio controls>
+
+<img id="startImage1" src="Images/StartImage1.png" width="20%">
+<img id="startImage2" src="Images/StartImage2.png" width="20%">
+<div id="StartMainBox">
+    <h1>Neues Spiel starten</h1>
+    <form action="game.php" method="post">
+        <input class="radio" type="radio" name="Spielerzahl" value="1" required> <label> 1 Spieler </label> <input type="radio" class="radio" name="Spielerzahl" value="2"> <label> 2 Spieler </label><br>
+        <label> Spieler 1: </label> <input type="text" name="namePlayer1" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
+        <label> Spieler 2: </label> <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
+        <input type="submit" value="Start"><br>
+    </form>
+</div>
+
+<div id="OptionBox">
+    <input id="musicButton" type="button" value="Musik an">
+
+</div>
+
+<audio autoplay="autoplay">
     <source src="Sound/MENU_SOUND.mp3" type="audio/mp3">
 </audio>
 

@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(to bottom, #383838, #303030);
+    background-repeat: no-repeat;
+    line-height: 200%;
+}
+
+input[type='button']{
+    background-color: #c2eafc;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px #555555;
+    margin: 0 1% 0 0;
+}
+
+input[type='text']{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #555555;
+    margin: 0 1% 0 0;
+}
+
+input[type='submit']{
+    background-color: darkred;
+    -webkit-text-fill-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #555555;
+    width: 30%;
+}
+
+
+h1{
+    -webkit-text-fill-color: aliceblue;
+    font-family: "Arial Black";
+}
+
+label{
+    -webkit-text-fill-color: aliceblue;
+    font-family: Arial;
+    margin: 0 1% 0 0;
+    font-optical-sizing: auto;
+}
+
+#startImage1{
+    float: left;
+}
+
+#startImage2{
+    float: right;
+}
+
+
+#StartMainBox{
+    padding: 2%;
+    width: 50%;
+    height: 70%;
+    overflow: auto;
+}
+
+#OptionBox{
+    padding: 2%;
+    width: 50%;
+    height: 70%;
+    overflow: auto;
+}
+
+#musicButton{
+    background-color: #aaffaa;
+}
+
+@media screen and (max-width: 500px) {
+
+    #startImage1, #startImage2 {
+        display: none;
+    }
+}
