@@ -32,6 +32,11 @@ h1{
     font-family: "Arial Black";
 }
 
+h2{
+    -webkit-text-fill-color: aliceblue;
+    font-family: "Arial Black";
+}
+
 label{
     -webkit-text-fill-color: aliceblue;
     font-family: Arial;
@@ -66,7 +71,9 @@ label{
     background-color: #aaffaa;
 }
 
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width: 900px) {
 
     #startImage1, #startImage2 {
         display: none;

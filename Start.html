@@ -4,29 +4,64 @@
     <meta charset="UTF-8">
     <title>Mühle – Onlinespiel</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="w3schools/toggleSwitch.css">
+    <script src="Scripts/Scripts.js"></script>
 </head>
 <body>
 
 <img id="startImage1" src="Images/StartImage1.png" width="20%">
 <img id="startImage2" src="Images/StartImage2.png" width="20%">
 <div id="StartMainBox">
-    <h1>Neues Spiel starten</h1>
+    <h1 id="headline">Neues Spiel starten</h1>
+    <br>
     <form action="game.php" method="post">
-        <input class="radio" type="radio" name="Spielerzahl" value="1" required> <label> 1 Spieler </label> <input type="radio" class="radio" name="Spielerzahl" value="2"> <label> 2 Spieler </label><br>
-        <label> Spieler 1: </label> <input type="text" name="namePlayer1" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
-        <label> Spieler 2: </label> <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required><label>Steinfarbe:</label><input type="button" value=Schwarz><input type="button" value=Weiss><br>
+        <h2>Spielmodus:</h2>
+        <div id="Spielmodus">
+            <input class="radio" type="radio" name="Spielerzahl" value="1" onclick="setPlayerTitle()" required>
+            <label> Mensch vs. Computer </label>
+            <br>
+            <input type="radio" class="radio" name="Spielerzahl" value="2">
+            <label> Mensch vs. Mensch </label>
+            <br>
+            <input type="radio" class="radio" name="Spielerzahl" value="3">
+            <label> Computer vs. Computer</label>
+        </div>
+        <h2>Spielerangaben:</h2>
+        <label> Spieler 1: </label>
+        <div id="player1Settings">
+            <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required>
+            <label>Steinfarbe: Schwarz</label>
+            <label class="switch" id="colorPlayer1">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <label>Weiss</label>
+        </div>
+        <label> Spieler 2: </label>
+        <div id="player2Settings">
+            <input type="text" name="namePlayer2" maxlength="25" autocomplete="off" required>
+            <label>Steinfarbe: Schwarz</label>
+            <label class="switch" id="colorPlayer2">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <label>Weiss</label>
+        </div>
+        <br>
+        <br>
         <input type="submit" value="Start"><br>
     </form>
 </div>
 
 <div id="OptionBox">
     <input id="musicButton" type="button" value="Musik an">
-
 </div>
 
 <audio autoplay="autoplay">
     <source src="Sound/MENU_SOUND.mp3" type="audio/mp3">
 </audio>
+
+<script>document.getElementById("headline").innerHTML = "Hello World"</script>
 
 </body>
 </html>
