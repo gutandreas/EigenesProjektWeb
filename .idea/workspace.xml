@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82dd4e7d-3514-4835-964a-d36768fe6a9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Scripts/Scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/w3schools/toggleSwitch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/w3schools/w3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sound/bell.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/w3schools/combobox.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
     </list>
@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sound" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -49,8 +49,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Images" />
       <recent name="$PROJECT_DIR$/Sound" />
+      <recent name="$PROJECT_DIR$/Images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/w3schools" />
@@ -70,7 +70,12 @@
       <workItem from="1614691508195" duration="6121000" />
       <workItem from="1614698503604" duration="6138000" />
       <workItem from="1614748163713" duration="1062000" />
-      <workItem from="1614935752915" duration="3519000" />
+      <workItem from="1614935752915" duration="3884000" />
+      <workItem from="1614962083141" duration="1882000" />
+      <workItem from="1615301105282" duration="2677000" />
+      <workItem from="1615443440561" duration="1298000" />
+      <workItem from="1615450814392" duration="410000" />
+      <workItem from="1615479712764" duration="7226000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Versuche mit HTML">
       <created>1614376381994</created>
@@ -86,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614706090014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Steinfarbe mit toggleSwitch.css implementiert">
+      <created>1614939824698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614939824698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Erste Versuche mit HTML" />
     <MESSAGE value="Startmenü optisch umgesetzt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startmenü optisch umgesetzt" />
+    <MESSAGE value="Steinfarbe mit toggleSwitch.css implementiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Steinfarbe mit toggleSwitch.css implementiert" />
   </component>
 </project>

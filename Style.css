@@ -16,6 +16,7 @@ input[type='text']{
     border-radius: 5px;
     box-shadow: 3px 3px 5px #555555;
     margin: 0 1% 0 0;
+    width: 20%;
 }
 
 input[type='submit']{
@@ -69,6 +70,20 @@ label{
 
 #musicButton{
     background-color: #aaffaa;
+}
+
+#player1Dropdown, #player2Dropdown{
+    display: none;
+    margin: 0 1% 0 0;
+    box-shadow: 3px 3px 5px #555555;
+    width: 21%;
+
+}
+
+#computerCode1, #computerCode2{
+    display: none;
+    resize: none;
+    overflow-y: scroll;
 }
 
 
