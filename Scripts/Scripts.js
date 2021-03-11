@@ -5,24 +5,31 @@ function test(){
 
 function checkChange(element){
 
-    if(element.value == 0 && element.id=="player1Dropdown"){
-        showComputerCodeTextArea(1);
-        test();
-    }
-    if(element.value == 0 && element.id=="player2Dropdown"){
-        showComputerCodeTextArea(2);
-        test();
-    }
+    if (element.id=="player1Dropdown"){
+        if(element.value == 0){
+            showComputerCodeTextArea(1, "display:block");
+        }
+        else {
+            showComputerCodeTextArea(1, "display:none");
+        }}
+
+    if (element.id=="player2Dropdown"){
+        if(element.value == 0){
+            showComputerCodeTextArea(2, "display:block");
+        }
+        else {
+            showComputerCodeTextArea(2, "display:none");
+        }}
 }
 
-function showComputerCodeTextArea(player){
+function showComputerCodeTextArea(player, display){
     switch (player){
         case 1:{
-            document.getElementById("computerCode1").style="display:block";
+            document.getElementById("computerCode1").style=display;
             break;
         }
         case 2:{
-            document.getElementById("computerCode2").style="display:block";
+            document.getElementById("computerCode2").style=display;
             break;
         }
     }
@@ -61,6 +68,11 @@ function saveComputer(player){
     }
 }
 
+function setDropdownIndex(player, index){
+    var dropdownString = "player" + player + "Dropdown";
+    document.getElementById(dropdownString).selectedIndex = index;
+}
+
 
 function clickOnElement(element){
     document.getElementById(element).click();
@@ -76,18 +88,27 @@ function showComputerMenus(modus){
             document.getElementById("player1Textfield").style="display:inline-block";
             document.getElementById("player2Dropdown").style="display:none";
             document.getElementById("player2Textfield").style="display:inline-block";
+            resetDropdownAndHideTextArea()
             break;}
         case 2: {
             document.getElementById("player1Dropdown").style="display:none";
             document.getElementById("player1Textfield").style="display:inline-block";
             document.getElementById("player2Dropdown").style="display:inline-block";
             document.getElementById("player2Textfield").style="display:none";
+            resetDropdownAndHideTextArea()
             break;}
         case 3: {
             document.getElementById("player1Dropdown").style="display:inline-block";
             document.getElementById("player1Textfield").style="display:none";
             document.getElementById("player2Dropdown").style="display:inline-block";
             document.getElementById("player2Textfield").style="display:none";
+            resetDropdownAndHideTextArea()
             break;}
+}
 
+function resetDropdownAndHideTextArea(){
+    showComputerCodeTextArea(1, "display:none")
+    showComputerCodeTextArea(2, "display:none")
+    setDropdownIndex(1, 0);
+    setDropdownIndex(2, 0)
 }}

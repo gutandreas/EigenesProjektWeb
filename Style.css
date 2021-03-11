@@ -31,11 +31,18 @@ input[type='submit']{
 h1{
     -webkit-text-fill-color: aliceblue;
     font-family: "Arial Black";
+    margin: 0% 0 2% 0;
 }
 
 h2{
     -webkit-text-fill-color: aliceblue;
     font-family: "Arial Black";
+}
+
+h3{
+    -webkit-text-fill-color: aliceblue;
+    font-family: "Arial Black";
+    margin: 3% 0 2% 0;
 }
 
 label{
@@ -83,7 +90,12 @@ label{
 #computerCode1, #computerCode2{
     display: none;
     resize: none;
+
+}
+
+#computerCode1TextArea, #computerCode2TextArea{
     overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 

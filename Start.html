@@ -27,7 +27,7 @@
         </div>
         <h2>Spielerangaben:</h2>
 
-        <label id="test"> Spieler 1: </label>
+        <h3> Spieler 1: </h3>
         <div id="player1Settings">
             <input id="player1Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 1" required>
                 <select id="player1Dropdown" onchange="checkChange(this)">
@@ -38,8 +38,10 @@
                 </select>
             <div id="computerCode1">
                 <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName1">
-                <textarea id="computerCode1TextArea" rows="10" cols=100% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
+                <textarea id="computerCode1TextArea" rows="10" cols=80% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
+                <br>
                 <input type="button" value="Computer hinzufügen" onclick="saveComputer(1)">
+                <br>
             </div>
             <label>Schwarz</label>
             <label class="switch" id="colorPlayer1">
@@ -49,7 +51,7 @@
             <label>Weiss</label>
         </div>
 
-        <label> Spieler 2: </label>
+        <h3> Spieler 2: </h3>
         <div id="player2Settings">
             <input id="player2Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 2" required>
             <select id="player2Dropdown" onchange="checkChange(this)">
@@ -60,8 +62,10 @@
             </select>
             <div id="computerCode2">
                 <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName2">
-                <textarea id="computerCode2TextArea" rows="10" cols=100% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
+                <textarea id="computerCode2TextArea" rows="10" cols=80% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
+                <br>
                 <input type="button" value="Computer hinzufügen" onclick="saveComputer(2)">
+                <br>
             </div>
             <label>Schwarz</label>
             <label class="switch" id="colorPlayer2">
