@@ -3,7 +3,7 @@ function test(){
     audio.play();
 }
 
-function checkChange(element){
+function checkChangeInDropdownMenu(element){
 
     if (element.id=="player1Dropdown"){
         if(element.value == 0){
@@ -38,31 +38,37 @@ function showComputerCodeTextArea(player, display){
 function saveComputer(player){
     switch (player){
         case 1:{
-            document.getElementById("computerCode1").value;
-            var addedOption = document.createElement("option");
-            addedOption.text = document.getElementById("computerCodeName1").value;
-            addedOption.value = document.getElementById("computerCode1").value;
-            var dropdown = document.getElementById("player1Dropdown");
-            var index = document.getElementById("player1Dropdown").options.length-1;
-            dropdown.add(addedOption, dropdown[index]);
-            document.getElementById("computerCode1").style="display: none";
-            document.getElementById("player1Dropdown").selectedIndex = index;
-            document.getElementById("computerCodeName1").value = "";
-            document.getElementById("computerCode1TextArea").value = "";
+            if(document.getElementById("computerCodeName1").value != ""
+            && document.getElementById("computerCode1TextArea").value != ""){
+                document.getElementById("computerCode1").value;
+                var addedOption = document.createElement("option");
+                addedOption.text = document.getElementById("computerCodeName1").value;
+                addedOption.value = document.getElementById("computerCode1").value;
+                var dropdown = document.getElementById("player1Dropdown");
+                var index = document.getElementById("player1Dropdown").options.length-1;
+                dropdown.add(addedOption, dropdown[index]);
+                document.getElementById("computerCode1").style="display: none";
+                document.getElementById("player1Dropdown").selectedIndex = index;
+                document.getElementById("computerCodeName1").value = "";
+                document.getElementById("computerCode1TextArea").value = "";}
+            else {alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
             break;
         }
         case 2:{
-            document.getElementById("computerCode2").value;
-            var addedOption = document.createElement("option");
-            addedOption.text = document.getElementById("computerCodeName2").value;
-            addedOption.value = document.getElementById("computerCode2").value;
-            var dropdown = document.getElementById("player2Dropdown");
-            var index = document.getElementById("player2Dropdown").options.length-1;
-            dropdown.add(addedOption, dropdown[index]);
-            document.getElementById("computerCode2").style="display: none";
-            document.getElementById("player2Dropdown").selectedIndex = index;
-            document.getElementById("computerCodeName2").value = "";
-            document.getElementById("computerCode2TextArea").value = "";
+            if(document.getElementById("computerCodeName2").value != ""
+            && document.getElementById("computerCode2TextArea").value != ""){
+                document.getElementById("computerCode2").value;
+                var addedOption = document.createElement("option");
+                addedOption.text = document.getElementById("computerCodeName2").value;
+                addedOption.value = document.getElementById("computerCode2").value;
+                var dropdown = document.getElementById("player2Dropdown");
+                var index = document.getElementById("player2Dropdown").options.length-1;
+                dropdown.add(addedOption, dropdown[index]);
+                document.getElementById("computerCode2").style="display: none";
+                document.getElementById("player2Dropdown").selectedIndex = index;
+                document.getElementById("computerCodeName2").value = "";
+                document.getElementById("computerCode2TextArea").value = "";}
+            else {alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
             break;
         }
     }
@@ -73,12 +79,9 @@ function setDropdownIndex(player, index){
     document.getElementById(dropdownString).selectedIndex = index;
 }
 
-
 function clickOnElement(element){
     document.getElementById(element).click();
 }
-
-
 
 function showComputerMenus(modus){
     switch (modus){

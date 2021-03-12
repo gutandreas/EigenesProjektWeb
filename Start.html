@@ -29,15 +29,15 @@
 
         <h3> Spieler 1: </h3>
         <div id="player1Settings">
-            <input id="player1Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 1" required>
-                <select id="player1Dropdown" onchange="checkChange(this)">
+            <input id="player1Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 1">
+                <select id="player1Dropdown" onchange="checkChangeInDropdownMenu(this)">
                     <div>
                         <option value="1">Standardcomputer</option>
                         <option value="0">Computer hinzufügen </option>
                     </div>
                 </select>
             <div id="computerCode1">
-                <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName1">
+                <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName1" required>
                 <textarea id="computerCode1TextArea" rows="10" cols=80% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
                 <br>
                 <input type="button" value="Computer hinzufügen" onclick="saveComputer(1)">
@@ -53,15 +53,15 @@
 
         <h3> Spieler 2: </h3>
         <div id="player2Settings">
-            <input id="player2Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 2" required>
-            <select id="player2Dropdown" onchange="checkChange(this)">
+            <input id="player2Textfield" type="text" name="namePlayer2" maxlength="25" autocomplete="off" placeholder="Name Player 2">
+            <select id="player2Dropdown" onchange="checkChangeInDropdownMenu(this)">
                 <div>
                     <option value="1">Standardcomputer</option>
                     <option value="0">Computer hinzufügen</option>
                 </div>
             </select>
             <div id="computerCode2">
-                <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName2">
+                <input type="text" maxlength="20" placeholder="Computername" id="computerCodeName2" required>
                 <textarea id="computerCode2TextArea" rows="10" cols=80% placeholder="Geben Sie hier den Codes des Computers ein..."></textarea>
                 <br>
                 <input type="button" value="Computer hinzufügen" onclick="saveComputer(2)">
