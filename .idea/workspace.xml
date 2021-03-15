@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82dd4e7d-3514-4835-964a-d36768fe6a9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Start.html" afterDir="false" />
     </list>
@@ -11,6 +11,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sound" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,7 +77,8 @@
       <workItem from="1615443440561" duration="1298000" />
       <workItem from="1615450814392" duration="410000" />
       <workItem from="1615479712764" duration="9308000" />
-      <workItem from="1615537174777" duration="1628000" />
+      <workItem from="1615537174777" duration="5482000" />
+      <workItem from="1615792549372" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Versuche mit HTML">
       <created>1614376381994</created>
@@ -111,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615491538232</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Folgender Fehler behoben: Es konnten leere Computer gespeichert werden">
+      <created>1615539152947</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615539152947</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +146,7 @@
     <MESSAGE value="Steinfarbe mit toggleSwitch.css implementiert" />
     <MESSAGE value="RadioButtons in Startmenu ändern Felder für den Modus. Computerspieler können durch DropdownMenu über TextArea hinzugefügt werden." />
     <MESSAGE value="Fehler von RadioButtons behoben. css angepasst (Spieler 1 und Spieler 2 = &lt;h3&gt;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fehler von RadioButtons behoben. css angepasst (Spieler 1 und Spieler 2 = &lt;h3&gt;)" />
+    <MESSAGE value="Folgender Fehler behoben: Es konnten leere Computer gespeichert werden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Folgender Fehler behoben: Es konnten leere Computer gespeichert werden" />
   </component>
 </project>

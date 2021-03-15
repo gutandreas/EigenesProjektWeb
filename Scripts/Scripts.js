@@ -51,7 +51,7 @@ function saveComputer(player){
                 document.getElementById("player1Dropdown").selectedIndex = index;
                 document.getElementById("computerCodeName1").value = "";
                 document.getElementById("computerCode1TextArea").value = "";}
-            else {alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
+            else {window.alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
             break;
         }
         case 2:{
@@ -68,7 +68,7 @@ function saveComputer(player){
                 document.getElementById("player2Dropdown").selectedIndex = index;
                 document.getElementById("computerCodeName2").value = "";
                 document.getElementById("computerCode2TextArea").value = "";}
-            else {alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
+            else {window.alert("Es müssen ein Computername und ein Computercode vorhanden sein, um den Computer hinzuzufügen.");}
             break;
         }
     }
