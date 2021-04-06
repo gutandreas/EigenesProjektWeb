@@ -4,8 +4,7 @@
     <list default="true" id="82dd4e7d-3514-4835-964a-d36768fe6a9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1p1s76ixHPxpRp3LEkTB0QkF1ra" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

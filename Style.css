@@ -31,7 +31,7 @@ input[type='submit']{
 h1{
     -webkit-text-fill-color: aliceblue;
     font-family: "Arial Black";
-    margin: 0% 0 2% 0;
+    margin: 1% 1% 2% 0;
 }
 
 h2{
@@ -45,11 +45,29 @@ h3{
     margin: 3% 0 2% 0;
 }
 
+h4{
+    -webkit-text-fill-color: aliceblue;
+    font-family: "Arial";
+    margin: 1% 0 1% 0;
+}
+
 label{
     -webkit-text-fill-color: aliceblue;
     font-family: Arial;
     margin: 0 1% 0 0;
     font-optical-sizing: auto;
+}
+
+.labelPut{
+    -webkit-text-fill-color: #90ccee;
+}
+
+.labelKilled{
+    -webkit-text-fill-color: #90ee90;;
+}
+
+.labelLost{
+    -webkit-text-fill-color: #ee6060;
 }
 
 #startImage1{
@@ -79,6 +97,14 @@ label{
     background-color: #aaffaa;
 }
 
+#gridpane{
+    position: relative;
+}
+
+#board{
+    position: relative;
+}
+
 #player1Dropdown, #player2Dropdown{
     display: none;
     margin: 0 1% 0 0;
@@ -96,6 +122,20 @@ label{
 #computerCode1TextArea, #computerCode2TextArea{
     overflow-y: scroll;
     overflow-x: scroll;
+}
+
+
+
+#score{
+    float: left;
+    width: 28%;
+    padding: 1%;
+}
+
+#log{
+    float: right;
+    width: 28%;
+    padding: 1%;
 }
 
 
